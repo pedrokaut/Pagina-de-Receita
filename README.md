@@ -1,2 +1,2 @@
 # hello-word
-primeiro repositorio inical
+Iniciando um projeto guia com a rocketseat
