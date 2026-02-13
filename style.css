@@ -40,6 +40,7 @@ h1{
 }
 h2{
     font-size: 24px;
+    padding: 1%;
 }
 h1,h2{
     color: #291b1a;
@@ -48,6 +49,7 @@ h1,h2{
 }
 ul{
     padding: 0%;
+    margin-left: 5%;
 
 }
 footer{
@@ -58,4 +60,13 @@ footer{
 }
 footer img {
     vertical-align: middle;
+}
+#cabeçalho{
+    color: #f0e8c2;
+    font-size: 35px;
+    display: inline;
+    margin: 20px;
+    text-align: center;
+    padding: 20px 10px;
+
 }
