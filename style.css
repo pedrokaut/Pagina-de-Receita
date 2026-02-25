@@ -61,12 +61,9 @@ footer{
 footer img {
     vertical-align: middle;
 }
-#cabeçalho{
+#cabeçalho {
     color: #f0e8c2;
-    font-size: 35px;
-    display: inline;
-    margin: 20px;
     text-align: center;
-    padding: 20px 10px;
-
+    padding-bottom: 48px;
+    white-space: nowrap;
 }
