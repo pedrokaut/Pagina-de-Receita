@@ -22,9 +22,28 @@ body{
     border-radius: 24px;
     margin: 48px auto 28px;
 }
-  main{
-    padding: 24px;
-  }
+    main{
+        padding: 24px;
+    }
+    /* layout: imagem acima do conteúdo em telas pequenas, lado a lado em telas maiores */
+    #page{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        max-width: 95%;
+        width: 800px;
+    }
+    #page img{
+        width: 100%;
+        max-width: 420px;
+        border-radius: 12px;
+        object-fit: cover;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+    #page main{
+        width: 100%;
+    }
 section + section {
     margin-top: 12px;
 
@@ -62,8 +81,47 @@ footer img {
     vertical-align: middle;
 }
 #cabeçalho {
-    color: #f0e8c2;
+        color: #f0e8c2;
+        text-align: center;
+        padding-bottom: 48px;
+        white-space: nowrap;
+}
+
+/* Header / nav styles */
+.site-header{
     text-align: center;
-    padding-bottom: 48px;
-    white-space: nowrap;
+    padding: 18px 0;
+}
+.nav-list{
+    list-style: none;
+    display: inline-flex;
+    gap: 18px;
+    padding: 0;
+    margin: 0;
+}
+.nav-list a{
+    color: #f0e8c2;
+    text-decoration: none;
+    background: rgba(41,27,26,0.6);
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.nav-list a:hover{
+    background: rgba(41,27,26,0.85);
+}
+
+/* Responsive: side-by-side on wider screens */
+@media (min-width: 900px){
+    #page{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #page img{
+        flex: 0 0 360px;
+    }
+    #page main{
+        flex: 1 1 auto;
+    }
+    h1{ font-size: 48px; }
 }
